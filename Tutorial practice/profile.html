@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            box-sizing: border-box;
+            background-color: white;
+            box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.2);
+            width: 100vh;
+            height: 100vh;
+            border-radius: 30px;;
+            height: 100vh;
+            display: grid;
+            place-items: center; 
+        }
+
+        /* NAVIGATION BAR */
+
+        .nav-container {
+            list-style-type: none;
+            position: relative;
+            background-color: #201f1f;
+            height: 50px;
+            width: 100%;
+            overflow: hidden;
+            border-bottom: 8px solid rgba(0, 0, 0, 0.2);
+        }
+
+        /* .nav-container .navbar {         (Using flex to display "a link")
+            display: flex;
+            gap: 30px;
+        } */
+
+        img {
+            float: left;
+            padding: 15px 14px;
+        }
+
+        .navbar li {
+            float: left;
+        }
+
+        .navbar li a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            padding: 15px 14px;
+        }
+
+        .clickme {
+            text-decoration: none;
+            border: 2px solid green;
+            color: white;
+            padding: 15px 10px;
+            float: right;
+            margin-right: 10px;
+        }
+
+        .clickme:hover {
+            background-color: #008000;
+            color: #ffffff;
+        }
+
+        .navbar a:hover {
+            background-color: #008000;
+        }
+
+        /* CONTENT USING FLOAT */
+        .text img {
+            float: right;
+            margin: 20px;
+        }
+
+        .text p {
+            margin-left: 20px;
+            padding: 10px;
+        }
+
+        .content h2 {
+            text-align: center;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+            text-shadow: 0px 2px 8px #23f666, 0px 16px 16px rgb(168, 255, 202);
+            color: #156235;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav-container">
+
+        <div class="navbar">
+            <!-- <h1 style="color: white;">Abbas Akeem</h1> -->
+            <img src="/icon/olale.png" alt="my image icon" width="25px" height="25px">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <a class="clickme" href="">Let Chat</a>
+        </div>
+    </nav>
+
+    <main id="recap-info">
+        <div class="profile">
+            <img src="" alt="">
+        </div>
+        <div class="content">
+            <h2>Recap of Journey so far!</h2>
+            <div class="text">
+                <img src="/images/WhatsApp Image 2025-08-28 at 22.38.12_c3367ecd.jpg" alt="my profile image"
+                    width="350px" height="250px">
+                <p>I'm <strong>Abbas Akeem Opeyemi</strong>, I joined coding and web development bootcamp few weeks ago.
+                    So
+                    far, i'm able to understand each main branches of web development and the tools used by this branch.
+                </p>
+                <p>We, dive in straight into HTML which is also known as Hypertext Markup Language. Which we talked
+                    about
+                    each tag and element and also explain what an inline and block element are.</p>
+                <p>Recently, we are branching little by little on CSS also known as Cascading Stylesheet. Css is
+                    basically
+                    used for styling. For instance, using a building as an example CSS is the paint and whatever things
+                    we
+                    used to beautify a building. To be candid, this has become a great journey for me and i can't wait
+                    to achieve my bigger dreams
+                    soon!</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

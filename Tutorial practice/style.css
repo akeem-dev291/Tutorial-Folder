@@ -1,0 +1,132 @@
+* {
+    max-width: 100%;
+    margin: 0;
+}
+
+.hero {
+    display: flex;
+    justify-content:space-between;
+}
+/* header section */
+header {
+    background-color: rgb(136, 164, 189);
+    height: 40px;
+    position:fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+/* nav section */
+.nav-container .navbar{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: fixed;
+    top: 40px;
+    z-index: 1000;
+    background-color: black;
+    height: 30px;
+    padding: 10px;
+    width: 100%;
+}
+
+.nav-container a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-container li {
+    list-style-type: none;
+}
+
+.css, .div, .classes,.table,.text-style {
+    border-right: 1px solid white;
+    padding: 5px 10px 5px 10px;
+}
+
+.nav-container a:hover {
+    text-decoration: overline 3px rgb(255, 255, 255);
+    padding: 10px 0;
+}
+
+/* iframe section */
+.frame1 iframe {
+    display: block;
+    margin-bottom: 20px;
+    border:none;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+/* Link Button */
+h2 {
+    font-weight: 700;
+    margin: 0 0 15px 40px;
+    color: red;
+}
+
+.link-button {
+    display: block;
+    margin: 29px 10px 30px 20px;
+    cursor: pointer;
+}
+
+.link-button .block-color {
+    text-decoration: none;
+    width: 100px;
+    background-color: black;
+    color: white;
+    padding: 20px 25px;
+    margin: 0 0 10px 0;
+}
+
+.block-color:link {
+    background-color: black;
+}
+.block-color:visited {
+    background-color: black;
+}
+
+.block-color:hover {
+    background-color: green;
+}
+
+.block-color:active {
+    background-color: green;
+}
+
+.link-button .unblock-color {
+    text-decoration: none;
+    width: 100px;
+    border: 3px solid green;
+    color: hwb(147 0% 65%);
+    padding: 17px 22px;
+    margin: 0 0 10px 0;
+}
+
+.unblock-color:link {
+    background-color: none;
+}
+.unblock-color:visited {
+    background-color: none;
+}
+
+.unblock-color:hover {
+    background-color: green;
+    color: white;
+}
+
+.unblock-color:active {
+    background-color: green;
+    color: white;
+}

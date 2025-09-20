@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            background-color: darkgreen;
+            position: relative;
+            list-style-type: none;
+            overflow: hidden;
+        }
+
+        .nav-container li a {
+            text-decoration: none;
+            color: white;
+            padding: 12px 17px;
+        }
+
+        li a:hover,.dropdown:hover {
+            background-color: #adff2f;
+            color: #000000;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 130px;
+            box-shadow: 0px 8px 17px 0px rgba(0, 0, 0, 0.2);
+            
+        }
+
+        .dropdown-content a {
+            text-decoration: none;
+            text-align: left;
+            padding: 8px 14px;
+            color: #000000;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Sticky Positon</h1>
+    <nav class="nav-container">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Service</a></li>
+        <li class="dropdown">
+            <a class="dropbtn" href="">Marketing</a>
+            <div class="dropdown-content">
+                <a href="">Blog</a>
+                <a href="">Promotions</a>
+                <a href="">Post</a>
+            </div>
+        </li>
+    </nav>
+</body>
+
+</html>

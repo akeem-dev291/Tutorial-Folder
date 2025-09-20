@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="table.css">
+    <style>
+        body {
+            width: 600px;
+            max-width: 800px;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(9, 154, 74);
+            text-shadow: 2px 1px 3px rgb(226, 255, 5), 10px 2px 10px rgb(3, 110, 44), 0px 8px 15px rgb(4, 90, 52);
+        }
+
+        table,th,td {
+            border: 1px solid rgba(229, 229, 229, 0.84);
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+            overflow-x: auto;
+            empty-cells: hide;
+        }
+
+        th {
+            background-color: green;
+            color: white;
+        }
+        td {
+            height: 100px;
+            text-align: center;
+        }
+
+        th, td {
+            border-bottom: 1px solid rgb(192, 191, 191);
+            padding: 20px;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(229, 229, 229, 0.84);
+        }
+
+         tr:nth-child(odd) {
+            background-color: rgba(179, 179, 179, 0.712);
+        }
+
+        tr:hover {
+            background-color: greenyellow;
+        }
+
+        caption {
+            caption-side: bottom;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>YEAR 8</h1>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>Wednesday 1st June</th>
+            <th>Thursday 2nd June</th>
+            <th>Friday 3rd June</th>
+            <th>Monday 6th June </th>
+        </tr>
+
+        <tr>
+            <td>8.55 <br> 10.55 </td>
+            <td>Revision History <br> (60 mins) <br> 9.50 - 10.50</td>
+            <td>Revision Rel. Studies <br>(60 mins) <br> 9.50 - 10.50</td>
+            <td>Revision Maths <br> (90 mins) <br> 9.20 - 10.50</td>
+            <td>Art <br> (90 mins) <br> 9.20 - 10.50</td>
+        </tr>
+
+        <tr>
+            <th></th>
+            <th></th>
+            <th>Break</th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <td>11.10<br>12.50</td>
+            <td>Revision <br> Music <br> (45 mins) <br> 12.05 - 12.45</td>
+            <td>Revision <br> Home Econ. <br> (60 mins) <br> 11.45 - 12.45</td>
+            <td>Revision</td>
+            <td>Revision <br> Technology <br> (60 mins)<br>11.45 - 12.45</td>
+        </tr>
+
+        <tr>
+            <th></th>
+            <th></th>
+            <th>Lunch</th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <td>1.40<br>3.30</td>
+            <td>Revision <br> French <br> (60 mins) <br> 2.25 - 3.25</td>
+            <td>Revision <br> English <br> (75 mins) <br> 2.10 - 3.25</td>
+            <td>Science <br> (105 mins) <br> 1.40 - 3.25</td>
+            <td>Revision <br> Geography <br> (60 mins) <br> 2.25 - 3.25</td>
+        </tr>
+
+        <caption>Table:1</caption>
+    </table>
+</body>
+
+</html>

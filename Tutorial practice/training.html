@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OVERFLOW</title>
+    <style>
+        /* .inline {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 20px 0 0;
+        } */
+
+        body {
+            margin: 0;
+        }
+
+        /* Vertical Navigation */
+        .vertical-nav {
+            padding: 0;
+            margin: 0;
+            background-color: #e4e3e3;
+            list-style-type: none;
+            width: 15%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            overflow: auto;
+            font-size: 1.2rem;
+            z-index: 1;
+
+        }
+
+        .vertical-nav li a {
+            display: block;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .vertical-nav li a.active {
+            background-color: green;
+            color: white;
+        }
+
+        .vertical-nav li a:hover:not(.active) {
+            background-color: grey;
+            color: white;
+        }
+
+        /* Horizontal Navigation */
+        .horizontal-nav {
+            padding: 0;
+            margin: 0;
+            background-color: rgb(199, 199, 199);
+            list-style-type: none;
+            height: 50px;
+            width: 85%;
+            margin-left: 15%; 
+            display: flex;
+            justify-content:center;
+            overflow:hidden;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
+
+        /* .horizontal-nav li {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        } */
+
+        .horizontal-nav li a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            padding: 14px 16px;
+            border-right: 1px solid grey;
+        }
+
+        .horizontal-nav li a:hover {
+            background-color: grey;
+            color: white;
+        }
+
+        .horizontal-nav li a.active {
+            background-color: green;
+            color: white;
+        }
+
+        .horizontal-nav li a:hover:not(.active) {
+            background-color: grey;
+        }
+
+        .content h1{
+            margin-left: 20%;
+            padding: 5px 5px;
+            margin-top: 50px;
+        }
+        .content p {
+            margin-left: 20%;
+            padding: 5px 5px;
+        }
+
+        /* Responsisve */
+        @media screen and (max-width:900px) {
+            .vertical-nav {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .vertical-nav li a {
+                float: left;
+                padding: 15px;
+            }
+
+            .content {max-width: 0;}
+        }
+
+        @media screen and (max-width:400px) {
+            .vertical-nav li a {
+                text-align: center;
+                float: none;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="inline">
+        <!-- Vertical Navigation -->
+        <nav class="vertical-nav">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Promotions</a></li>
+            <li><a href="#">Marketing Strategy</a></li>
+        </nav>
+
+        <!-- Horizontal Navigation -->
+        <nav class="horizontal-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Promotions</a></li>
+            <li><a  class="active" href="#">Marketing</a></li>
+        </nav>
+    </div>
+
+    <div class="content">
+        <h1>My Gift</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum fuga vitae, molestiae auteque ipsam exercitationem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum fuga vitae, molestiae auteque ipsam exercitationem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis labore adipisciaperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat p
+    </div>
+</body>
+
+</html>

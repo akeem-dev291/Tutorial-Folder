@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class and Id</title>
+    <style>
+        * {
+            max-width: 100%;
+            margin: 0;
+        }
+
+        #Hero-section .states {
+            display: inline-block;
+            width: 47%;
+        }
+
+        .st1 {
+            color: rgb(30, 144, 30);
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-left: 30px;
+            margin-top: 20px;
+            outline: 5px solid green;
+            outline-offset: 15px;
+            border: 2px solid rgb(121, 16, 16);
+        }
+
+        .st2 {
+            color: rgb(158, 174, 193);
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .lists .list-son {
+            display: inline-block;
+            width: 47%;
+        }
+
+        .state {
+            background-color: rgb(30, 144, 30);
+            box-sizing: border-box;
+            color: white;
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+
+        .capital {
+            background-color: rgb(216, 234, 255);
+            box-sizing: border-box;
+            color: rgb(45, 45, 45);
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 25px 0 0 0;
+            margin: 10px;
+            background-color: rgb(7, 7, 7);
+            height: 40px;
+
+        }
+
+        .nav-container a {
+            text-align: center;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+
+        .nav-container li {
+            list-style-type: none;
+        }
+
+        .nav-container a:hover {
+            border-bottom: 10px outset rgb(255, 255, 255);
+            padding: 10px 0;
+        }
+
+        h1 {
+            color: crimson;
+            text-align: center;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hero-section -->
+    <div id="Hero-section">
+        <h2 class="states st1">States</h2>
+        <h2 class="states st2">Capital</h2>
+    </div>
+
+    <div class="lists">
+        <div class="list-son state">
+            <p>Kwara</p>
+            <p>Lagos</p>
+            <p>Ogun</p>
+            <p>Oyo</p>
+            <p>Osun</p>
+        </div>
+
+        <div class="list-son capital">
+            <p>Ilorin</p>
+            <p>Ikeja</p>
+            <p>Abeokuta</p>
+            <p>Ibadan</p>
+            <p>Osogbo</p>
+        </div>
+
+    </div>
+
+    <!-- Use Id as a bookmarks -->
+
+    <nav class="nav-container">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#marketing">MARKETING</a></li>
+    </nav>
+
+    <h1 id="about">ABOUT</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.</p>
+    <h1 id="contact">CONTACT US</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, eum! Vero tempore excepturi nihil tenetur
+        aliquam impedit iste fugiat sed voluptatibus laborum perferendis ut neque maxime numquam fugit animi
+        praesentium necessitatibus natus ullam suscipit consectetur, nostrum totam eveniet! Harum, velit. Lorem ipsum,
+        dolor sit amet consectetur adipisicing elit. Unde ea consequuntur culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.</p>
+    <h1 id="marketing">MARKETING</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, iusto distinctio earum quidem aspernatur
+        ducimus! Odio soluta minus possimus et culpa veniam officiis voluptate eveniet est fuga, consequuntur
+        ratione qui, nisi omnis sint! Repellendus facilis distinctio reprehenderit, nisi et eveniet pariatur impedit
+        totam tenetur nostrum necessitatibus hic provident incidunt amet dolorem modi recusandae molestiae
+        blanditiis nesciunt, fugiat labore mollitia odit. Suscipit illo perferendis nesciunt minus soluta, rerum
+        provident aliquam ducimus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur culpa
+        dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ea consequuntur
+        culpa dolorem ex distinctio et
+        officiis dolore repellendus, eum, quidem repudiandae. Sit eligendi saepe dolorum libero, minus fugiat temporibus
+        cumque. Reprehenderit sed maiores dolorum nobis cumque animi quas quasi voluptate quos odit fugit, magnam
+        nostrum, eligendi dolores non ab.</p>
+</body>
+
+</html>

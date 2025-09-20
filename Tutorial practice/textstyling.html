@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Styling</title>
+    <style>
+        body {
+            max-width: 600px;
+        }
+
+        .h-value {
+            text-align: center;
+            color: brown;
+        }
+
+        p.p1 {
+            text-align-last: justify;
+            background-color: black;
+            color: white;
+            margin: 0 0 0 20px;
+            padding: 10px;
+        }
+
+        .h-first img {
+            vertical-align: sub;
+        }
+
+        p.p2 {
+            text-align-last: left;
+            background-color: rgb(91, 3, 3);
+            color: white;
+            margin: 0 0 0 20px;
+            padding: 10px;
+        }
+
+        .h-second img {
+            vertical-align: super;
+        }
+
+        .direction {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+            font-style: italic;
+        }
+
+        .shadow-effect {
+            margin: 0 0 0 20px;
+        }
+
+        .shadow-effect .effect {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 4px #b90e0e;
+        }
+
+        #p-value {
+            background-color: black;
+            color: white;
+            padding-left: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .white-spacing {
+            margin: 0 0 0 20px;
+        }
+
+        .white-spacing .ws-effect {
+            color: aliceblue;
+            text-shadow: 2px 1px 1px red, 0px 0px 10px blue, 0px 0px 5px green;
+            text-align: center;
+        }
+
+        .white-spacing p {
+            white-space: pre-line;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <h1 class="h-value h-first">Text Styling: <img src="/images/student-wearing-face-masks-library.jpg" alt=""
+                width="20px" height="20px"></h1>
+        <p class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In deserunt nemo quo eaque ratione
+            dolore,
+            praesentium fugiat, molestiae incidunt iure alias facilis omnis hic, dicta perspiciatis quam perferendis
+            modi exercitationem?</p>
+    </div>
+
+    <div class="second">
+        <h2 class="h-value h-second">Sub Text Styling: <img src="/images/student-wearing-face-masks-library.jpg" alt=""
+                width="20px" height="20px"></h2>
+        <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis beatae voluptates tenetur quisquam
+            soluta fuga
+            atque maxime, porro temporibus dolorem deleniti excepturi aperiam dignissimos quos eveniet nisi corrupti!
+            Rem a aliquam quibusdam non asperiores. Voluptatem quibusdam officiis sapiente placeat harum?</p>
+    </div>
+
+    <p class="direction">Lorem ipsum dolor sit ametelit. Laudantium, aspernatur.</p>
+
+    <div class="shadow-effect">
+        <h1 class="effect">Text Shadow</h1>
+        <div id="p-value">
+            <p>Lorem, ipsum.</p>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem, ipsum.</p>
+        </div>
+        <h1 class="effect">continuation</h1>
+        <div id="p-value">
+            <p>Lorem, ipsum.</p>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+    </div>
+
+    <div class="white-spacing">
+        <h1 class="ws-effect">White Spacing</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tenetur accusamus repellat temporibus
+            eligendi est praesentium sunt rerum earum. Aliquam quos assumenda voluptates doloribus consectetur,
+            asperiores nostrum saepe id hic? sunt rerum earum. Aliquam quos assumenda voluptates doloribus
+            consectetursunt rerum earum. Aliquam quos assumenda voluptates doloribus consectetur</p>
+    </div>
+
+    
+</body>
+
+</html>

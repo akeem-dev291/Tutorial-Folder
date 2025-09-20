@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div uses</title>
+    <style>
+        .center {
+            width: 300px;
+            margin: auto;
+        }
+
+        .container {
+            width: 100%;
+            overflow: auto;
+        }
+
+        .container .container-son {
+            width: 33%;
+            float: left;
+        }
+
+        .inline-block {
+            width: 33%;
+            display: inline-block;
+        }
+
+        .flex-container {
+            display: flex;
+        }
+
+        .flex-container .flex-son {
+            width: 33%;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Center Aligning Div -->
+    <div class="center" style="background-color: antiquewhite;">
+        <h2>DIV CENTRE ALIGN</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, reprehenderit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni soluta mollitia necessitatibus!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, vel?</p>
+    </div>
+
+    <div class="center" style="background-color: aqua;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dicta.</p>
+    </div>
+
+    <div class="center" style="background-color: rgb(27, 165, 96);">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dicta.</p>
+    </div>
+
+    <!-- Side by Side Div using float -->
+    <div class="container">
+
+        <div class="container-son" style="background-color: antiquewhite;">
+            <h2>FIRST SECTION</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, reprehenderit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni soluta mollitia necessitatibus!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, vel?</p>
+        </div>
+
+        <div class="container-son" style="background-color: aqua;">
+            <h2>SECOND SECTION</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dicta.</p>
+        </div>
+
+        <div class="container-son" style="background-color: rgb(27, 165, 96);">
+            <h2>THIRD SECTION</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dicta.</p>
+        </div>
+    </div>
+
+    <!-- Side by Side Div using Inline Block -->
+    <div class="inline-block" style="background-color: rgb(218, 238, 158);">
+        <h2>FIRST SECTION</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, reprehenderit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni soluta mollitia necessitatibus!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, vel?</p>
+    </div>
+
+    <div class="inline-block" style="background-color: rgb(142, 185, 255);">
+        <h2>SECOND SECTION</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dicta.</p>
+    </div>
+
+    <div class="inline-block" style="background-color: rgb(255, 184, 221);">
+        <h2>THIRD SECTION</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dicta.</p>
+    </div>
+
+    <!-- Side by Side Div using Flex Container -->
+    <div class="flex-container">
+
+        <div class="flex-son" style="background-color: antiquewhite;">
+            <h2>FIRST SECTION</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, reprehenderit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni soluta mollitia necessitatibus!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, vel?</p>
+        </div>
+
+        <div class="flex-son" style="background-color: aqua;">
+            <h2>SECOND SECTION</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dicta.</p>
+        </div>
+
+        <div class="flex-son" style="background-color: rgb(27, 165, 96);">
+            <h2>THIRD SECTION</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dicta.</p>
+        </div>
+    </div>
+
+    <!-- Side by Side Div using Grid Method -->
+    <div class="grid-container">
+
+        <div style="background-color: antiquewhite;">
+            <h2>FIRST SECTION</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, reprehenderit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni soluta mollitia necessitatibus!
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, vel?</p>
+        </div>
+
+        <div style="background-color: aqua;">
+            <h2>SECOND SECTION</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dicta.</p>
+        </div>
+
+        <div style="background-color: rgb(255, 184, 221);">
+            <h2>THIRD SECTION</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, eum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, dicta.</p>
+        </div>
+    </div>
+</body>
+
+</html>
