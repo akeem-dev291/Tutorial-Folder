@@ -1,0 +1,854 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* NAVIGATION BAR */
+
+.nav-container {
+    background-color: #1A2C30;
+    box-sizing: border-box;
+    position: static;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 50px 0px 50px;
+}
+
+.nav-link {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link1 {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.nav-link li {
+    list-style-type: none;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: #B0CE8E;
+}
+
+.navbar .icon {
+    color: #B0CE8E;
+    font-size: 1.12rem;
+    /* margin: 0 0 0 35px; When use space between (to give a left margin) */
+    font-weight: 700;
+}
+
+/* ======cart icon ======= */
+
+.navlink1 .cart {
+    padding: 0px 15px;
+}
+
+.nav-link1 .cart a {
+    /* margin: 0 0 0 35px; When use space between (to give a right margin) */
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #B0CE8E;
+    margin: 0px 8px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    border-bottom: 3px solid #B0CE8E;
+    padding: 5px 0px;
+}
+
+.nav-link1 .cart a:hover {
+    color: #006981;
+}
+
+/* ======Search icon ======= */
+
+.navbar .search a {
+    /* margin: 0 0 0 35px; When use space between (to give a right margin) */
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #B0CE8E;
+    margin: 0px 8px;
+    text-decoration: none;
+}
+
+.navbar .search a:hover {
+    color: #006981;
+}
+
+/* Currencies changing */
+.currency select {
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #efffdc;
+    color: #305308;
+    z-index: 1000;
+}
+
+.currency select:focus {
+    border: 2px solid #305308;
+}
+
+/* HERO SECTION */
+
+
+
+.wrapper {
+    background: url(/images/happy-dark-skinned-female-stylist-with-afro-hairstyle-smiles-broadly-wears-knitted-red-sweater-stands-near-rack-with-hangers.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-overlay {
+    content: "";
+    background: rgba(3, 59, 13, 0.61);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.card {
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    padding: 10px;
+    z-index: 1;
+    transition: all 1s ease-out, transform 1s ease-out;
+}
+
+.card:hover {
+    transform: translateY(8px);
+}
+
+.hero-content h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.hero-content p {
+    text-indent: 25px;
+    padding: 0px 20px;
+    line-height: 25px;
+    font-size: 1.14rem;
+    margin: 0px 0px 20px 0px;
+}
+
+.hero-button button {
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background-color: #1A2C30;
+    border: none;
+    border-radius: 20px;
+}
+
+button a {
+    color: #8dff0c;
+    text-decoration: none;
+    font-size: 1.12rem;
+}
+
+.hero-button button:hover {
+    background-color: #006981;
+}
+
+/* ===Carousel===*/
+
+.carousel {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    animation: slide 9s infinite;
+}
+
+.slide {
+    width: 50%;
+    flex-shrink: 0;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+}
+
+/* CLOTHES GALLERY */
+
+/* ===Headings (putting it to flex for the div content)=== */
+
+#features .headings {
+    display: flex;
+    justify-content: space-between;
+    background-color: #305308;
+    align-items: center;
+
+}
+
+.headings .head-item {
+    color: #E7FFCC;
+    margin: 0px 25px;
+    padding: 15px 0px;
+}
+
+.head-item a {
+    color: #E7FFCC;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.gallery .gallery-item {
+    border: 1px solid #B0CE8E;
+    background-color: #e7ffcc;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.078);
+    box-sizing: border-box;
+    /* transition: all 1s ease-out, transform 1s ease-out; */
+}
+
+/* .gallery-item:hover {
+    transform: translateY(5px);  (
+} */
+
+/* ===ITEM content on features=== */
+.desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 15px 0px 15px;
+}
+
+.description {
+    margin: 0;
+    padding: 0;
+}
+
+.add2cart {
+    width: 100px;
+    height: 40px;
+    background-color: #305308;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.078);
+    transition: all 1s ease-out, transform 1s ease-out;
+}
+
+.add2cart:hover {
+    transform: translateY(3px);
+    background-color: #B0CE8E;
+    color: #305308;
+}
+
+.item-name {
+    color: #305308;
+    font-weight: 900;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.price {
+    color: #3d6e04;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* jewelries grouping */
+
+/* ===Headings (putting it to flex for the div content)=== */
+
+.j-feature .j-headings {
+    display: flex;
+    justify-content: space-between;
+    background-color: #305308;
+    align-items: center;
+}
+
+.j-headings .head-item {
+    color: #E7FFCC;
+    margin: 0px 10px;
+    padding: 15px 0px;
+}
+
+.head-item a {
+    color: #E7FFCC;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ===Jewelries Catalog in Gallery Flexbox=== */
+
+.Jewelries {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.Jewelries .gallery-item {
+    border: 1px solid #B0CE8E;
+    background-color: #e7ffcc;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.078);
+    box-sizing: border-box;
+}
+
+.Jewelries .gallery-item {
+    border: 1px solid #B0CE8E;
+    background-color: #e7ffcc;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.078);
+    box-sizing: border-box;
+    /* transition: all 1s ease-out, transform 1s ease-out; */
+}
+
+/* .gallery-item:hover {
+    transform: translateY(5px);  (gallery card transition)
+} */
+
+/* TESTIMONIES FROM CUSTOMERS */
+
+.testimonies {
+    margin-bottom: 100px;
+}
+
+.testimonies h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    height: 40px;
+    padding: 100px 0px 0px 0px;
+    color: #305308;
+    font-weight: 900;
+}
+
+.testimonies .reviewf {
+    text-align: center;
+    font-size: 1.2rem;
+    height: 40px;
+    padding: 0px 0px 40px 0px;
+    color: #305308;
+    font-weight: 700;
+}
+
+.review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.review .review-list {
+    background-color: #ffffff;
+    border-radius: 0px 30px 0px 30px;
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+    margin: 40px 20px 0px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.078);
+    transition: all 1s ease-out, transform 1s ease-out;
+}
+
+.review-list:hover {
+    transform: translateY(-4px);
+}
+
+.rev-det {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.review-list img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+}
+
+.review-list .rev-content {
+    line-height: 2rem;
+    font-size: 1rem;
+    text-indent: 2rem;
+}
+
+.review-list .rev-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #3d6e04;
+}
+
+/* NEWSLETTER AND SIGNUP */
+
+#newsletter-Signup {
+    background-color: #305308;
+    width: 100%;
+}
+
+#newsletter-Signup h1 {
+    text-align: center;
+    color: #B0CE8E;
+    padding: 20px
+}
+
+.input-item h3 {
+    text-align: center;
+    color: #B0CE8E;
+    padding: 10px;
+    font-size: 1.4rem;
+}
+
+.newsletter {
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+.input-item {
+    text-align: center;
+    border: 2px solid #3a6509;
+    width: 500px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.input-item input {
+    width: 70%;
+    height: 40px;
+    display: block;
+    margin: auto;
+    padding: 0px 10px;
+    border: none;
+    font-size: 1rem;
+    color: #E7FFCC;
+    background-color: #3a6509;
+}
+
+.input-item input:focus {
+    outline: none;
+    border: 3px solid #b0ff55;
+}
+
+.input-item button {
+    margin: 20px 0px;
+}
+
+button {
+    height: 40px;
+    background-color: #B0CE8E;
+    color: #1A2C30;
+    width: 100px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8dff0c;
+}
+
+/* FAQS QUESTION AND ANSWER SECTION */
+
+.faq-section {
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.078);
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.faq {
+    border-bottom: 1px solid #B0CE8E;
+    padding: 15px 0;
+}
+
+.faq input[type="checkbox"] {
+    display: none;
+}
+
+.faq label {
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    padding-right: 25px;
+}
+
+.faq label::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    font-size: 1.2rem;
+}
+
+.faq input:checked+label::after {
+    content: "-";
+}
+
+.faq .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    color: #444;
+    font-size: 15px;
+}
+
+.faq input:checked+label+.answer {
+    max-height: 200px;
+    padding-top: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #172803;
+    height: 60vh;
+    color: #ffffff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 35px;
+    padding: 20px 0px;
+}
+
+.footer-content h3 {
+    color: #8dff0c;
+}
+
+.contact p>a {
+    text-decoration: none;
+    color: white;
+    cursor: auto;
+}
+
+.links li {
+    list-style-type: none;
+    padding: 8px 0px;
+}
+
+.links li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.links li a:hover {
+    color: #8dff0c;
+}
+
+.social a {
+    padding: 0px 4px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social a:hover {
+    color: #8dff0c;
+}
+
+.copywrite {
+    text-align: center;
+    color: #B0CE8E;
+}
+
+/* ============================
+   MEDIA QUERIES FOR ALL DEVICES
+   ============================ */
+
+/* === Mobile Phones (0px–600px) === */
+@media (max-width: 600px) {
+
+    /* GENERAL */
+    body {
+        font-size: 0.8rem;
+    }
+
+    /* NAVIGATION BAR */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 20px;
+    }
+
+    .icon h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .nav-link {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+
+    }
+
+    .navbar a:hover {
+        border-bottom: none !important;
+        color: #8dff0c;
+    }
+
+    .nav-link1 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .currency select {
+        width: 100%;
+    }
+
+    /* HERO SECTION */
+    .wrapper {
+        height: auto;
+        padding: 40px 0;
+        background-position: top;
+    }
+
+    .card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+        line-height: 1.6rem;
+    }
+
+    /* CAROUSEL */
+    .carousel {
+        height: 200px;
+    }
+
+    .slide {
+        width: 100%;
+    }
+
+    /* GALLERY (CLOTHES + JEWELRIES) */
+    .gallery,
+    .Jewelries {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item img,
+    .Jewelries .gallery-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .add2cart {
+        width: 80px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+
+    /* TESTIMONIES */
+    .review {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .review-list {
+        width: 90%;
+        height: auto;
+    }
+
+    /* FAQ SECTION */
+    .faq-section {
+        width: 90%;
+        padding: 20px;
+    }
+
+    /* NEWSLETTER */
+    .input-item {
+        width: 90%;
+    }
+
+    /* FOOTER */
+    .footer {
+        height: auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        margin: 0 20px;
+    }
+
+    .social a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
+
+/* === Tablets (601px–1024px) === */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    /* NAVIGATION BAR */
+    .navbar {
+        flex-wrap: wrap;
+        margin: 0 30px;
+    }
+
+    .nav-link {
+        gap: 20px;
+    }
+
+    .nav-link1 {
+        gap: 15px;
+    }
+
+    .currency select {
+        width: 110px;
+        height: 35px;
+    }
+
+    /* HERO SECTION */
+    .card {
+        width: 80%;
+        padding: 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    /* CAROUSEL */
+    .carousel {
+        height: 250px;
+    }
+
+    /* GALLERY */
+    .gallery,
+    .Jewelries {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .gallery-item img,
+    .Jewelries .gallery-item img {
+        width: 250px;
+        height: 180px;
+    }
+
+    /* TESTIMONIES */
+    .review-list {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* FOOTER */
+    .footer-content {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    .social a {
+        display: inline-block;
+        margin: 4px;
+    }
+}
+
+/* === Laptops and Desktops (Above 1024px) === */
+@media (min-width: 1025px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .navbar {
+        margin: 0 50px;
+    }
+
+    .nav-link {
+        gap: 30px;
+    }
+
+    .nav-link1 {
+        gap: 20px;
+    }
+
+    .card {
+        width: 600px;
+    }
+
+    .gallery-item img,
+    .Jewelries .gallery-item img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .review-list {
+        width: 350px;
+        height: 350px;
+    }
+
+    .footer-content {
+        justify-content: space-between;
+        margin: 0 50px;
+    }
+}

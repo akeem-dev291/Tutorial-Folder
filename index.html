@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Al-Hamid Store</title>
     <script src="https://kit.fontawesome.com/08ffb24a24.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="ecommerce.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -25,16 +25,46 @@
                 <li><a href="#">Contact</a></li>
             </div>
 
-            <div class="cart">
-                <a href="">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a>
+            <div class="nav-link1">
+                <div class="currency">
+                    <select id="currency" name="currency">
+                        <option value="USD">US Dollar (USD)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                        <option value="GBP">British Pound (GBP)</option>
+                        <option value="JPY">Japanese Yen (JPY)</option>
+                        <option value="CAD">Canadian Dollar (CAD)</option>
+                        <option value="AUD">Australian Dollar (AUD)</option>
+                        <option value="CNY">Chinese Yuan (CNY)</option>
+                        <option value="INR">Indian Rupee (INR)</option>
+                        <option value="ZAR">South African Rand (ZAR)</option>
+                        <option value="NGN">Nigerian Naira (NGN)</option>
+                        <option value="KES">Kenyan Shilling (KES)</option>
+                        <option value="GHS">Ghanaian Cedi (GHS)</option>
+                        <option value="BRL">Brazilian Real (BRL)</option>
+                        <option value="MXN">Mexican Peso (MXN)</option>
+                        <option value="CHF">Swiss Franc (CHF)</option>
+                        <option value="RUB">Russian Ruble (RUB)</option>
+                        <option value="SGD">Singapore Dollar (SGD)</option>
+                        <option value="HKD">Hong Kong Dollar (HKD)</option>
+                        <option value="SEK">Swedish Krona (SEK)</option>
+                        <option value="AED">UAE Dirham (AED)</option>
+                    </select>
+                </div>
+
+
+                <div class="cart">
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+                <div class="search">
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
             </div>
-        </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="Hero-section">
+
         <div class="wrapper">
             <div class="background-overlay"></div>
             <div class=" card">
@@ -58,187 +88,404 @@
     </section>
 
     <!-- About Section -->
-    <section id="about-section">
 
-        <div class="about-content">
-            <div class="about">
-                <h2>About Us</h2>
-                <p><strong>Al Hamid Store </strong>offers a wide selection of stylish, quality clothing for every
-                    occasion. We focus on
-                    delivering trendy pieces at fair prices in US dollars, making shopping easy and accessible for
-                    customers everywhere. Whether you're looking for casual or formal wear, Al Hamid Store brings you
-                    the perfect blend of style, affordability, and great service.
-                </p>
+    <!-- ===Carousel==== -->
+    <marquee behavior="smooth" direction="left"
+        style="color: #305308; font-size: 1rem; padding: 10px; background-color: #B0CE8E; font-weight: 800;">Newly
+        stocked
+        wears
+        available for all genders –
+        shop the latest styles today!</marquee>
 
-                <p>
-                    We’re committed to helping you express your personal style with confidence. Every item is carefully
-                    selected to meet high standards of comfort, durability, and design. Our team works daily to ensure
-                    that your shopping experience is smooth, secure, and satisfying.
-                </p>
-            </div>
-
-            <div class="image">
-                <img src="/e images/beautiful-young-woman-taking-selfie.jpg" alt="dark female holding clothes"
-                    width="600px" height="600px">
+    <section id="carousel">
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide"><img src="/images/stylish-african-american-woman-park-wooden-background.jpg"
+                        width="100%" /></div>
+                <div class="slide"><img
+                        src="/images/fashion-stylish-beautiful-young-brunette-woman-model-summer-hipster-colorful-casual-clothes-posing-street-background.jpg"
+                        width="100%" /></div>
+                <div class="slide"><img src="/images/african-woman-with-funny-hairstyle-posing-brown-wall.jpg"
+                        width="100%" /></div>
+                <div class="slide"><img
+                        src="/images/fascinating-mix-race-model-trendy-green-jacket-posing-pink-background-yellow-sunglasses-black-back-pack.jpg"
+                        width="100%" /></div>
+                <div class="slide"><img
+                        src="/images/bust-showcase-jewelry-display-necklace-pendant-jewelry-lifestyle-fashion-accessories-mockup.jpg"
+                        width="100%" /></div>
             </div>
         </div>
     </section>
 
     <!-- Gallery Catalogs -->
     <section id="features">
-        <h3>Top picks from Al-Hamid Store</h3>
-        <marquee behavior="smooth" direction="left" style="color: #008726; font-size: 1.14rem;">Newly stocked wears available for all genders –
-            shop the latest styles today!</marquee>
+        <div class="headings">
+            <h3 class="head-item">Top pick Wears from <strong>Al-Hamid Store</strong> </h3>
+            <span class="head-item"><a href="">See All</a></span>
+        </div>
+
+        <!-- ===Wears Catalog=== -->
         <div class="gallery">
+
             <div class="gallery-item">
-                <img src="/e images/young-man-happy-expression.jpg" alt="oversized jacket" width="350px" height="200px">
-                <div class="description">Leather Jacket</div>
-                <div class="price">$15</div>
+                <img src="/e images/young-man-happy-expression.jpg" alt="oversized jacket" width="300px" height="200px">
+
+                <div class="desc">
+                    <div class="description">
+                        <p class="item-name">Leather Jacket</p>
+                        <p class="price">$15</p>
+                    </div>
+
+                    <div class="add2cart">
+                        <button class="add2cart">Add to cart</button>
+                    </div>
+                </div>
             </div>
 
             <div class="gallery-item">
-                <img src="/e images/fashion-shoes-sneakers.jpg" alt="shoes sneakers" width="350px" height="200px">
-                <div class="description">Sneakers</div>
-                <div class="price">$40</div>
+                <img src="/e images/fashion-shoes-sneakers.jpg" alt="shoes sneakers" width="300px" height="200px">
+
+                <div class="desc">
+                    <div class="description">
+                        <p class="item-name">Sneakers</p>
+                        <p class="price">$40</p>
+                    </div>
+
+                    <div class="add2cart">
+                        <button class="add2cart">Add to cart</button>
+                    </div>
+                </div>
             </div>
 
             <div class="gallery-item">
-                <img src="/e images/sport-running-shoes.jpg" alt="sport shoes" width="350px" height="200px">
-                <div class="description">Sport Sneakers</div>
-                <div class="price">$25</div>
+                <img src="/e images/sport-running-shoes.jpg" alt="sport shoes" width="300px" height="200px">
+
+                <div class="desc">
+                    <div class="description">
+                        <p class="item-name">Sport Sneakers</p>
+                        <p class="price">$25</p>
+                    </div>
+
+                    <div class="add2cart">
+                        <button class="add2cart">Add to cart</button>
+                    </div>
+                </div>
             </div>
 
             <div class="gallery-item">
-                <img src="/e images/high-heel-shoes.jpg" alt="Asian Heel" width="350px" height="200px">
-                <div class="description">Asian Heel</div>
-                <div class="price">$25</div>
+                <img src="/e images/high-heel-shoes.jpg" alt="Asian Heel" width="300px" height="200px">
+
+                <div class="desc">
+                    <div class="description">
+                        <p class="item-name">Asian Heel</p>
+                        <p class="price">$25</p>
+                    </div>
+                    <div class="add2cart">
+                        <button class="add2cart">Add to cart</button>
+                    </div>
+                </div>
             </div>
 
             <div class="gallery-item">
                 <img src="/e images/african-american-teen-boy-denim-dungarees-streetwear-apparel-shoot.jpg"
-                    alt="sport shoes" width="350px" height="200px">
-                <div class="description">Denim Jean</div>
-                <div class="price">$10</div>
+                    alt="sport shoes" width="300px" height="200px">
+
+                <div class="desc">
+                    <div class="description">
+                        <p class="item-name">Denim Jean</p>
+                        <p class="price">$10</p>
+                    </div>
+                    <div class="add2cart">
+                        <button class="add2cart">Add to cart</button>
+                    </div>
+                </div>
             </div>
 
             <div class="gallery-item">
-                <img src="/e images/stiletto-heels-two-beauty-platform.jpg" alt="" width="350px" height="200px">
-                <div class="description">Gold Asian Heel</div>
-                <div class="price">$80</div>
+                <img src="/e images/african-american-teen-boy-denim-dungarees-streetwear-apparel-shoot.jpg"
+                    alt="sport shoes" width="300px" height="200px">
+
+                <div class="desc">
+                    <div class="description">
+                        <p class="item-name">Denim Jean</p>
+                        <p class="price">$10</p>
+                    </div>
+                    <div class="add2cart">
+                        <button class="add2cart">Add to cart</button>
+                    </div>
+                </div>
             </div>
 
-        </div>
+            <div class="gallery-item">
+                <img src="/e images/african-american-teen-boy-denim-dungarees-streetwear-apparel-shoot.jpg"
+                    alt="sport shoes" width="300px" height="200px">
 
-        <marquee behavior="smooth" direction="left" style="color: #008726; font-size: 1.14rem;">New jewelry just arrived with fresh styles for
-            all genders. Find your perfect shine today.</marquee>
+                <div class="desc">
+                    <div class="description">
+                        <p class="item-name">Denim Jean</p>
+                        <p class="price">$10</p>
+                    </div>
+                    <div class="add2cart">
+                        <button class="add2cart">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="gallery-item">
+                <img src="/e images/stiletto-heels-two-beauty-platform.jpg" alt="" width="300px" height="200px">
+
+                <div class="desc">
+                    <div class="description">
+                        <p class="item-name">Gold Asian Heel</p>
+                        <p class="price">$80</p>
+                    </div>
+                    <div class="add2cart">
+                        <button class="add2cart">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- ===Jewelries Catalog=== -->
+
+    <section class="j-feature">
+        <div class="j-headings">
+            <h3 class="head-item">Top pick Jewelries from <strong>Al-Hamid Store</strong> </h3>
+            <span class="head-item"><a href="">See All</a></span>
+        </div>
 
         <div class="Jewelries">
 
-
             <div class="gallery-item">
-                <img src="/e images/beautiful-luxury-necklace-jewelry-stand-neck (1).jpg" alt="Dubai Necklace"
-                    width="250px" height="350px">
-                <div class="description">Dubai Necklace</div>
-                <div class="price">$30</div>
+                <img src="/e images/beautiful-luxury-necklace-jewelry-stand-neck.jpg" alt="" width="300px"
+                    height="200px">
+
+                <div class="desc">
+                    <div class="description">
+                        <p class="item-name">Dubai Necklace</p>
+                        <p class="price">$24</p>
+                    </div>
+
+                    <div class="add2cart">
+                        <button class="add2cart">Add to cart</button>
+                    </div>
+                </div>
             </div>
 
             <div class="gallery-item">
-                <img src="/e images/expensive-golden-ring-displayed-rocks.jpg" alt="" width="250px" height="350px">
-                <div class="description">Dubai Golden Ring</div>
-                <div class="price">$80</div>
+                <img src="/e images/expensive-golden-ring-displayed-rocks.jpg" alt="" width="300px" height="200px">
+
+                <div class="desc">
+                    <div class="description">
+                        <p class="item-name">Golden Ring</p>
+                        <p class="price">$80</p>
+                    </div>
+
+                    <div class="add2cart">
+                        <button class="add2cart">Add to cart</button>
+                    </div>
+                </div>
             </div>
 
             <div class="gallery-item">
-                <img src="/e images/abstract-gold-chain-jewellery-presentation.jpg" alt="" width="250px" height="350px">
-                <div class="description">Dubai Gold Chain</div>
-                <div class="price">$95</div>
+                <img src="/e images/expensive-golden-ring-displayed-rocks.jpg" alt="" width="300px" height="200px">
+
+                <div class="desc">
+                    <div class="description">
+                        <p class="item-name">Golden Ring</p>
+                        <p class="price">$80</p>
+                    </div>
+
+                    <div class="add2cart">
+                        <button class="add2cart">Add to cart</button>
+                    </div>
+                </div>
             </div>
 
+
             <div class="gallery-item">
-                <img src="/e images/beautiful-luxury-necklace-jewelry-stand-neck.jpg" alt="" width="250px"
-                    height="350px">
-                <div class="description">Eqyptian Luxury Necklace</div>
-                <div class="price">$45</div>
+                <img src="/e images/abstract-gold-chain-jewellery-presentation.jpg" alt="" width="300px"
+                    height="200pxpx">
+
+                <div class="desc">
+                    <div class="description">
+                        <p class="item-name">Dubai Golden Chain</p>
+                        <p class="price">$75</p>
+                    </div>
+
+                    <div class="add2cart">
+                        <button class="add2cart">Add to cart</button>
+                    </div>
+                </div>
             </div>
 
         </div>
     </section>
 
     <!-- Review or Testimonies -->
-    <section id="Testimonies">
+    <section class="testimonies" id="Testimonies">
         <h2>Testimonies</h2>
+        <p class="reviewf">Review from our customers</p>
         <div class="review">
             <div class="review-list">
-                <img src="/images/WhatsApp Image 2025-08-28 at 22.38.12_c3367ecd.jpg" alt="" width="70px" height="50px">
+
                 <p class="rev-content">I’ve bought from Al-Hamid Store a couple of times and I’ve never been
                     disappointed. The clothes are
                     high quality and exactly as shown. Their customer service is friendly and responsive, and my orders
                     always arrive on time. It’s one of the few stores I trust for stylish and reliable outfits.</p>
-                <h5 class="rev-name">Adebayo Suliyat</h5>
+
+                <div class="rev-det">
+                    <img src="/images/WhatsApp Image 2025-08-28 at 22.38.12_c3367ecd.jpg" alt="">
+                    <h5 class="rev-name">Adebayo Mubaraq</h5>
+                </div>
             </div>
 
             <div class="review-list">
-                <img src="/images/WhatsApp Image 2025-08-28 at 22.38.12_c3367ecd.jpg" alt="" width="70px" height="50px">
+
                 <p class="rev-content">I’ve bought from Al-Hamid Store a couple of times and I’ve never been
                     disappointed. The clothes are
                     high quality and exactly as shown. Their customer service is friendly and responsive, and my orders
+
                     always arrive on time. It’s one of the few stores I trust for stylish and reliable outfits.</p>
-                <h5 class="rev-name">Imran Aminat</h5>
+
+                <div class="rev-det">
+                    <img src="/images/WhatsApp Image 2025-08-28 at 22.38.12_c3367ecd.jpg" alt="">
+                    <h5 class="rev-name">Imran Aminat</h5>
+                </div>
             </div>
 
+
             <div class="review-list">
-                <img src="/images/WhatsApp Image 2025-08-28 at 22.38.12_c3367ecd.jpg" alt="" width="70px" height="50px">
+
+                <p class="rev-content">I’ve bought from Al-Hamid Store a couple of times and I’ve never been
+                    disappointed. The clothes are
+                    high quality and exactly as shown. Their customer service is friendly and responsive, and my orders
+
+                    always arrive on time. It’s one of the few stores I trust for stylish and reliable outfits.</p>
+
+                <div class="rev-det">
+                    <img src="/images/WhatsApp Image 2025-08-28 at 22.38.12_c3367ecd.jpg" alt="">
+                    <h5 class="rev-name">Imran Aminat</h5>
+                </div>
+            </div>
+
+
+            <div class="review-list">
+
                 <p class="rev-content">I’ve bought from Al-Hamid Store a couple of times and I’ve never been
                     disappointed. The clothes are
                     high quality and exactly as shown. Their customer service is friendly and responsive, and my orders
                     always arrive on time. It’s one of the few stores I trust for stylish and reliable outfits.</p>
-                <h5 class="rev-name">Rafiu Barakat Alake</h5>
+                <div class="rev-det">
+                    <img src="/images/WhatsApp Image 2025-08-28 at 22.38.12_c3367ecd.jpg" alt="">
+                    <h5 class="rev-name">Rafiu Barakat Alake</h5>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="Newsletter-Signup">
-        <h2>Newsletter Signup</h2>
-        <div>
-            <input type="email" id="email">
-            <button type="submit">Subscribe</button>
+    <!-- FAQS QUESTION AND ANSWER SECTION -->
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq">
+            <input type="checkbox" id="q1">
+            <label for="q1">What type of clothing does Al-Hamid Store sell?</label>
+            <div class="answer">
+                <p>We offer modest, high-quality clothing including dubai wear, jewelries, men’s wear, and elegant
+                    Islamic
+                    fashion pieces for all occasions.</p>
+            </div>
         </div>
 
+        <div class="faq">
+            <input type="checkbox" id="q2">
+            <label for="q2">Do you offer nationwide delivery?</label>
+            <div class="answer">
+                <p>Yes, we deliver across Nigeria. We also offer international shipping to selected countries.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <input type="checkbox" id="q3">
+            <label for="q3">How can I place an order?</label>
+            <div class="answer">
+                <p>You can order via our Instagram, WhatsApp, or through our website (if available). Just send a
+                    screenshot or product code.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <input type="checkbox" id="q4">
+            <label for="q4">Are the items exactly as seen online?</label>
+            <div class="answer">
+                <p>Yes, all items are true to the pictures we post. We ensure color accuracy and quality representation.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <input type="checkbox" id="q5">
+            <label for="q5">What is your return or exchange policy?</label>
+            <div class="answer">
+                <p>We accept returns only for defective items, reported within 24 hours of delivery. Exchanges may be
+                    considered on a case-by-case basis.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <div class="logo">
-            <h3>Al-Hamid Store</h3>
-            <p>Quality Fashion. Trusted Service.</p>
+
+
+    <!-- NEWSLETTER AND FOOTER -->
+    <section id="newsletter-Signup">
+        <h1>Get In Touch</h1>
+
+        <div class="newsletter">
+            <div class="input-item">
+                <h3>Newsletter Signup</h3>
+                <input type="email" id="email">
+                <button type="submit">Subscribe</button>
+            </div>
         </div>
 
-        <div>
-            <h3>Contact Us</h3>
-            <p>Email:<a href="mailto:abbasakeem192@gmail.com">abbasakeem192@gmail.com</a></p>
-            <p>Phone:<a href="call:+2347014752222">+234 701 475 2222</a></p>
-            <p>Location: Lagos, Nigeria.
-        </div>
+        <!-- Footer Section -->
+        <footer class="footer">
 
-        <div class="links">
-            <h3>Quick Links</h3>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-        </div>
+            <div class="footer-content">
+                <div class="logo">
+                    <h3 class="icon">Al-Hamid Store</h3>
+                    <p>Quality Fashion. Trusted Service.</p>
+                </div>
 
-        <div class="social">
-            <h3>Follow Us</h3>
-            <a href="">Instagram</a>
-            <a href="">Facebook</a>
-            <a href="">Twitter</a>
-        </div>
+                <div class="contact">
+                    <h3>Contact Us</h3>
+                    <p>Email:<a href="mailto:abbasakeem192@gmail.com"> abbasakeem192@gmail.com</a></p>
+                    <p>Phone:<a href="call:+2347014752222"> +234 701 475 2222</a></p>
+                    <p>Location: Lagos, Nigeria.
+                </div>
 
-        <p>&copy; 2025 Al-Hamid Store. All rights reserved.</p>
-    </footer>
+                <div class="links">
+                    <h3>Quick Links</h3>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </div>
+
+                <div class="social">
+                    <h3>Follow Us</h3>
+                    <a href="">Instagram</a>
+                    <a href="">Facebook</a>
+                    <a href="">Twitter</a>
+                </div>
+            </div>
+            <hr>
+            <p class="copywrite">&copy; 2025 Al-Hamid Store. All rights reserved.</p>
+        </footer>
+    </section>
 </body>
 
 </html>
